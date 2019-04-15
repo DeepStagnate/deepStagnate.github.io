@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>搭建Hexo - Hexo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Leslie,"> 
+    <meta name="description" content="
+一、Hexo的安装部署：1.安装git,配置到环境变量（全局使用）2.安装nodJs和npm，同上3.创建github账号是否安装成功可使用下列命令查看版本：123git -vnode -v np,"> 
+    <meta name="author" content="Leslie"> 
+    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/laugh.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">Hexo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">搭建Hexo</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">搭建Hexo</h1>
+        <div class="stuff">
+            <span>四月 15, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <img src="/2019/04/15/hexo/hexo-1.png" title="hexo-1">
+<h1 id="一、Hexo的安装部署："><a href="#一、Hexo的安装部署：" class="headerlink" title="一、Hexo的安装部署："></a>一、Hexo的安装部署：</h1><p>1.安装git,配置到环境变量（全局使用）<br>2.安装nodJs和npm，同上<br>3.创建github账号<br>是否安装成功可使用下列命令查看版本：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git -v</span><br><span class="line">node -v </span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></p>
+<p>4.安装hexo：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure></p>
+<p>查看版本是否安装成功：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></p>
+<p>5.hexo初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></p>
+<p>6.hexo生成静态页面:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">或</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure></p>
+<p>7.启动服务：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line">或</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<p>之后本地便可访问<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>    查看页面<br>也可以使用下方命令指定端口<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 端口号</span><br></pre></td></tr></table></figure></p>
+<h1 id="二、Hexo的一些命令"><a href="#二、Hexo的一些命令" class="headerlink" title="二、Hexo的一些命令"></a>二、Hexo的一些命令</h1><p>1.创建makedown文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">'文件名'</span></span><br></pre></td></tr></table></figure></p>
+<p>文件存放在：hexo的安装路径\source\_posts下<br>2.创建makedown文件与文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">'名'</span></span><br></pre></td></tr></table></figure></p>
+<p>3.插件安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install 插件名</span><br></pre></td></tr></table></figure></p>
+<h1 id="三、走过的坑"><a href="#三、走过的坑" class="headerlink" title="三、走过的坑"></a>三、走过的坑</h1><p>1.如果需在github发布hexo需如下操作</p>
+<ul>
+<li>你的该项目名须与github的仓库名一致</li>
+<li><p>在hexo的_config文件中加上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: 你的github项目路径</span><br><span class="line">  branch: 分支</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用git生成SSH密钥，链接github仓库（emmmmmm步骤较多具体方法找度娘，故不再赘述）</p>
+</li>
+<li>安装插件hexo-deployer-git –save，在hexo部署完后,可将项目上传到github</li>
+</ul>
+<p>2.关于图片的问题（o(╯□╰)o在这个地方困扰了很久）<br>原本是使用的makedown插入图片的方法，试了很久发现方法一行不通，就换了种方法<br>方法一：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 <span class="string">''</span>图片title<span class="string">''</span>)</span><br></pre></td></tr></table></figure></p>
+<p>方法二：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img 图片路径 图片alt %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这种方法插入图片是在当前页面显示的，如果你也是用的Hexo-theme-diaspora主题的话，<br>每篇文章的首页题图需通过cover实现,例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标题</span><br><span class="line">date: 2019-04-15 22:26:16</span><br><span class="line">cover: /img/hexo-1.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>cover的路径自动定位在主题存放路径的source文件下</p>
+<p><em>(：3 」∠ )</em>时间不早了，还有很多没写完，主题啊，路径啊，样式修改什么的就以后再说吧。。。 。。。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="/mp3/Saika.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
